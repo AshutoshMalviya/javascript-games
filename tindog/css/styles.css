@@ -3,7 +3,7 @@
     color:white;
 }
 .container-fluid{
-    padding: 3% 15%;
+    padding: 3% 15% 11%;
 }
 h1{
     font-family: Montserrat;
@@ -49,6 +49,9 @@ margin: 5% 3% 5% 0;
 .title-image{
     width:60%;
     transform: rotate(25deg);
+    position: absolute;
+    right: 35%;
+    
 }
 
 
@@ -56,6 +59,9 @@ margin: 5% 3% 5% 0;
 /* feature section */
 #features{
     padding: 7% 15%;
+    position: relative;
+    background-color: white;
+    z-index: 1;
 }
 
 .feature-box{
@@ -121,3 +127,58 @@ padding: 7% 15%;
     width: 15%;
     margin: 20px 20px 50px;
 }
+
+
+/* pricing cards */
+
+#pricing {
+    text-align: center;
+    margin:7% auto;
+}
+
+.pricing-cards{
+    padding: 4% 10% ;
+}
+
+.pricing-column{
+    padding: 2% 2%;
+}
+
+@media (max-width : 1020px) {
+    .title-image {
+        position: static;
+        transform: rotate(0);
+    }
+    #title {
+        text-align: center;
+    }
+}
+
+
+ /* Call to Action  */
+
+ #cta {
+     background-color: #ff4c68;
+     text-align: center;
+     padding: 7% 15%;
+     
+ }
+
+ .h3-cta {
+     color: #fff;
+     margin: 2% auto;
+     font-size: 2rem;
+     width: 70%;
+ }
+
+ /* footer section */
+
+ #footer {
+     text-align: center;
+    background-color: #fff;
+    padding: 2% 15% 1%;
+ }
+
+.social-media-icon {
+   margin: 20px 10px;
+ }
