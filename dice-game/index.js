@@ -1,5 +1,5 @@
-var player1 = null;
-var player2 = null;
+var player1 = "player1";
+var player2 = "player2";
 function setNames() {
      player1=prompt("player 1 name:");
     player2= prompt("player 2 name");
@@ -23,12 +23,13 @@ function rollTheDice() {
     }
    
     if(player_num[0] > player_num[1]) {
-        document.querySelector("h1").innerText =  player1+ " wins";
+        document.querySelector("h3").innerText =  player1+ " wins";
     }
     else if(player_num[0] === player_num[1]) {
-        document.querySelector("h1").innerText =   "draw!";
+        document.querySelector("h3").innerText =   "draw!";
+        
     }
    else {
-    document.querySelector("h1").innerText =   player2 +" wins";
+    document.querySelector("h3").innerText =   player2 +" wins";
    }
 }
