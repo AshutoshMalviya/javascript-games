@@ -13,7 +13,7 @@ var level = 0;
 //variable for storing click counts
 var clickCount = 0;
 
-//1. Use jQuery to detect when a keyboard key has been pressed, when that happens for the first time, call nextSequence().
+//when a keyboard key has been pressed for the first time, call nextSequence().
 $(document).keypress(function() {
   if (!started) {
 
@@ -40,10 +40,9 @@ $(".btn").click(function() {
 function nextSequence() {
     clickCount = 0;
     userClickedPattern = [];
-  //4. Inside nextSequence(), increase the level by 1 every time nextSequence() is called.
+
   level++;
 
-  //5. Inside nextSequence(), update the h1 with this change in the value of level.
   $("#level-title").text("Level " + level);
 
   var randomNumber = Math.floor(Math.random() * 4);  //generates a number between 0 and 3.
